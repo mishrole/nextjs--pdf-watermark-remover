@@ -18,10 +18,125 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
+  /* background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
     )
-    rgb(var(--background-start-rgb));
+    rgb(var(--background-start-rgb)); */
+}
+
+textarea {
+  width: 500px;
+  min-height: 600px;
+}
+
+button {
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  color: #333;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 0.5rem 1rem;
+}
+
+button:hover {
+  background-color: #eee;
+}
+
+p,
+span {
+  margin: 0;
+}
+
+.pdf__form__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: 1rem;
+}
+
+.pdf__form__wrapper > * {
+  margin: 0.5rem 0;
+}
+
+.pdf__gallery {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  margin: 1rem;
+}
+
+.pdf__card {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin: 1rem;
+  width: 250px;
+  height: 300px;
+  position: relative;
+}
+
+.pdf__card__floating__cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -2px;
+  right: -2px;
+  padding: 0.5rem;
+  background-color: #333;
+  border-radius: 0 0 0 20px;
+  border-bottom: none;
+  border-right: none;
+  cursor: pointer;
+}
+
+.pdf__card__floating__cta__delete,
+.pdf__card__floating__cta__delete:hover {
+  border: none;
+  background-color: transparent;
+}
+
+.pdf__card__floating__cta:hover {
+  background-color: #444444;
+}
+
+.pdf__card__body {
+  display: flex;
+  margin: 0 auto;
+  flex: 1;
+  padding: 0.5rem;
+  width: 200px;
+  height: 200px;
+}
+
+.pdf__card__body__image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.pdf__card__footer {
+  display: flex;
+  justify-content: center;
+  padding: 1rem 0.5rem;
+  border-top: 1px solid #ccc;
+  align-items: center;
+}
+
+.pdf__result__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 1rem;
+  margin: 1rem;
 }

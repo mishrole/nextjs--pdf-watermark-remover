@@ -36,9 +36,12 @@
     "typescript": "5.1.6"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.1.1",
     "@types/jpeg-js": "^0.3.7",
     "@types/pdf-parse": "^1.1.1",
     "@types/pngjs": "^6.0.2",
+    "prettier": "^3.0.3",
+    "prettier-plugin-tailwindcss": "^0.5.7",
     "raw-loader": "^4.0.2"
   }
 }

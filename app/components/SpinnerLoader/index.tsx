@@ -2,7 +2,6 @@ import Image from "next/image";
 
 import "./styles.css";
 
-// import spinnerIcon from "../../../public/icons/spinner.svg";
 import spinnerIcon from "@/public/icons/spinner.svg";
 
 const SpinnerLoader = () => {
